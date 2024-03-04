@@ -1,0 +1,430 @@
+*{
+    background: #f3f5fc;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    font-family: Inter;
+    letter-spacing: 0em;
+    text-align: left;
+    box-sizing: border-box;
+}
+.logo{
+    /*padding-top: 18px;
+    margin-left: 18px;
+    width: 10%; */
+    width: auto;
+    height: 48px;
+    margin: 40px;    
+}
+main{
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 160px;
+    padding: 80px;
+}
+.principal{
+    width: 680px;
+}
+.campo-texto{
+    margin-top: 168px;
+    width: 616px;
+    height: 288px;
+    border-radius: 32px;
+    padding: 32px;
+}
+.text-area {
+    /*border: none;
+    color:blue;
+    margin-top: 90px;
+    text-transform: lowercase;
+    */
+    width: 577px;
+    height: 48px;
+    top: 168px;
+    left: 240px;
+
+}
+::placeholder {color: blueviolet}
+.text-area focus{
+    outline:none;
+}
+.secundaria{
+    margin: 32px;
+    background: white ;
+    border-radius: 32px;
+}
+.mensaje{
+    background: white;
+    background-image: url("/imagenes/Colibri.jpg");
+    background-repeat: no-repeat;
+    /**border: none;
+    border-radius: 24px;+*/
+    color:darkblue;
+    /**margin-left: 98px;
+    margin-top: 28;
+    padding-left: 20px;
+    border-radius: 32px;
+    position: fixed;**/
+    width: 336px;
+    height: 944px;
+    top: 40px;
+    border-radius: 32px;
+    margin-left: 10px;
+    padding: 32px;
+    border: none;
+
+}
+.mensaje:focus{
+    outline:none; 
+    /* cuando nos paramos sobre las cajas que no se resalte*/
+}
+.btn{
+    display: flex;
+    width: Fixed (680px);
+    height: Hug (67px);
+    top: 885px;
+    left: 240px;
+    gap: 24px;
+
+}
+.btnEncriptar{
+    width: 328px;
+    height: Hug (67px);
+    padding: 24px;
+    border-radius: 24px;
+    gap: 8px;
+    background: #0A3871;
+    color: #ffffff;
+    border: 1px solid #0A3871;
+    
+}
+.btnDesencriptar{
+    width: 328px;
+    height: Hug (67px);
+    padding: 24px;
+    border-radius: 24px;
+    gap: 8px;
+    border: 1px solid #0A3871;
+    background: #D8DFE8;
+    color:#0A3871;
+    margin-right: 0px;
+    /*State="Normal";*/
+}
+
+.informacion{
+    width: Hug (229px);
+    height: Hug (18px);
+    top: 851px;
+    left: 240px;
+    gap: 8px;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.copiar{
+    width: 100%;
+    height: Hug (67px);
+    top: 885px;
+    left: 1032px;
+    padding: 24px;
+    border-radius: 24px;
+    border: 1px solid #0A3871;
+    gap: 8px;
+    color: #0A3871;
+
+}
+
+/* Estilos específicos para tablet */
+@media (min-width: 767px) and (max-width: 771px) and (max-height: 1175px) and (min-height: 1173px) {
+    .logo { 
+        width: 31px; /* Reducir el tamaño del logo para tablet */
+        height: auto;
+        margin: 73px 40px 40px 40px;
+    }
+    main {
+        display: block;
+        margin: 0px; /* Ajustar el margen izquierdo para tablet */
+        padding: 0px;
+        width: 100%;
+        height: 100%;
+    }
+    .principal {
+        width: 90%; /* Ajustar el ancho para tablet */
+        height: 750px;
+        margin: 0px; /* Ajustar el margen izquierdo para tablet */
+        padding: 40px;
+    }
+    .campo-texto {
+        width: 90%; /* Ajustar el ancho para tablet */
+        height: 450px;
+        padding: 40px; /* Ajustar el margen superior para tablet */  
+        margin: auto;
+    }
+    .btn {
+        width: 100%; /* Ajustar el ancho para tablet */
+        margin: 0px; /* Ajustar el margen izquierdo para tablet */
+    }
+    .btnEncriptar{
+        width: 53%;  
+    }
+    .btnDesencriptar{
+      width: 53%;
+    }
+    .informacion-caja{
+        width: auto;
+    }
+    .secundaria{
+        width: 100%;
+        height: 133px;
+        margin: 0px;
+        padding: 0px;
+        background: blue;
+        border:0px;
+    }
+    
+    .mensaje{
+        background-image: url("/imagenes/Muñeco.png");
+        background-size: cover;
+        width: 94%; /* Ajustar el ancho al 100% */
+        height: 133px;
+        margin: 0px; /* Ajustar el margen a cero */
+        padding: 3%; /* Ajustar el padding a cero */
+        border:0px;
+    }
+    .copiar {
+        display: none; /* Ocultar el botón de copiar */
+    }
+}
+@media (width: 768px) and (height: 1384px) {
+    .logo {
+        height: 49px;
+        width: auto; /* Reducir el tamaño del logo para tablet */
+        
+        margin: 73px 40px 40px 40px;
+    }
+    main {
+        display: block;
+        margin: 0px; /* Ajustar el margen izquierdo para tablet */
+        padding: 0px;
+        width: 100%;
+        height: 100%;
+        background: red;
+    }
+    .principal {
+        width: 90%; /* Ajustar el ancho para tablet */
+        height: 750px;
+        margin: 0px; /* Ajustar el margen izquierdo para tablet */
+        padding: 40px;
+    }
+    .campo-texto {
+        width: 90%; /* Ajustar el ancho para tablet */
+        height: 450px;
+        padding: 40px; /* Ajustar el margen superior para tablet */  
+        margin: auto;
+    }
+    .btn {
+        width: 100%; /* Ajustar el ancho para tablet */
+        margin: 0px; /* Ajustar el margen izquierdo para tablet */
+    }
+    .btnEncriptar{
+        width: 53%;  
+    }
+    .btnDesencriptar{
+      width: 53%;
+    }
+    .informacion-caja{
+        width: auto;
+    }
+    .secundaria{
+        width: 688px;
+        height: 343px;
+        margin-left: 40px;
+        padding: 0px;
+        background: white;
+        border:0px;
+    }
+    .mensaje{
+        background-image: url("/imagenes/Colibri.jpg");
+        background: none;
+        background-size: cover;
+        width: 624px; /* Ajustar el ancho al 100% */
+        height: 200px;
+        margin: 0px; /* Ajustar el margen a cero */
+        padding: 32px; /* Ajustar el padding a cero */
+        border:0px;
+    }
+    .copiar {
+        width: 624px;
+        margin-left: 32px;
+    }
+}
+@media (min-width: 370px) and (max-width: 377px) and (min-height:930px) and (max-height: 934px) {
+    body{
+        margin: 0px;
+    }
+    .logo {
+        height: 48px;
+        width: auto; /* Reducir el tamaño del logo para tablet */
+        
+        margin: 24px 40px 24px 40px;
+    }
+    main {
+        display: block;
+        margin: 0px; /* Ajustar el margen izquierdo para tablet */
+        padding: 0px;
+        width: 375px;
+        height: 837px;
+        background: none;
+    }
+    .principal {
+        width: 100%; /* Ajustar el ancho para tablet */
+        height: 467px;
+        margin: 56px 0px 0px 0px; /* Ajustar el margen izquierdo para tablet */
+        padding: 0px;
+    }
+    .campo-texto {
+        width: 343px; /* Ajustar el ancho para tablet */
+        height: 48px;
+        padding: 0px; /* Ajustar el margen superior para tablet */  
+        margin: 0px 0px 0px 16px;
+    }
+    .btn {
+        display: block;
+        width: 343px; /* Ajustar el ancho para tablet */
+        height: 168px;
+        margin: 0px; /* Ajustar el margen izquierdo para tablet */
+        padding: 12px;
+    }
+    .btnEncriptar{
+        width: 343px;
+        height: 67px;
+        margin-bottom: 24px;  
+        text-align: center;
+        font-size: 18px;
+    }
+    .btnDesencriptar{
+      width: 343px;
+      height: 67px; 
+      text-align: center;
+      font-size: 18px;
+      margin-bottom: 24px;  
+    }
+    .informacion-caja{
+        
+        width: auto;
+        margin: 200 px 0px 0px 0px;
+    }
+    .secundaria{
+        width: 350px;
+        height: 186px;
+        margin-left: 0px;
+        margin-top: 48px;
+        padding: 12px;
+        background: none;
+        border:0px;
+        
+    }
+    .mensaje{
+        background-image: url("/imagenes/Colibri.jpg");
+        background: white;
+        background-size: cover;
+        width: 263px; /* Ajustar el ancho al 100% */
+        height: 122px;
+        margin: 0px 0px 0px 10px; /* Ajustar el margen a cero */
+        padding: 32px; /* Ajustar el padding a cero */
+        border: 0px 0px 0px 0px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    }
+    .copiar {
+        width: 624px;
+        margin-left: 32px;
+    }
+}
+@media  (max-height: 1755px) and (min-height:1700px) {
+    body{
+        margin: 0px;
+        padding: 0px;
+        width: 375px;
+        height: 1750px;
+    }
+    .logo {
+        height: 48px;
+        width: auto; /* Reducir el tamaño del logo para tablet */
+        
+        margin: 24px 40px 24px 40px;
+    }
+    main {
+        display: block;
+        margin: 0px; /* Ajustar el margen izquierdo para tablet */
+        padding: 0px;
+        width: 375px;
+        height: 1750px;
+        background: green;
+    }
+    .principal {
+        width: 100%; /* Ajustar el ancho para tablet */
+        height: 467px;
+        margin: 56px 0px 0px 0px; /* Ajustar el margen izquierdo para tablet */
+        padding: 0px;
+    }
+    .campo-texto {
+        width: 343px; /* Ajustar el ancho para tablet */
+        height: 48px;
+        padding: 0px; /* Ajustar el margen superior para tablet */  
+        margin: 0px 0px 0px 16px;
+    }
+    .btn {
+        display: block;
+        width: 343px; /* Ajustar el ancho para tablet */
+        height: 168px;
+        margin: 0px; /* Ajustar el margen izquierdo para tablet */
+        padding: 12px;
+    }
+    .btnEncriptar{
+        width: 343px;
+        height: 67px;
+        margin-bottom: 24px;  
+        text-align: center;
+        font-size: 18px;
+    }
+    .btnDesencriptar{
+      width: 343px;
+      height: 67px; 
+      text-align: center;
+      font-size: 18px;
+      margin-bottom: 24px;  
+    }
+    .informacion-caja{
+        
+        width: auto;
+        margin: 200 px 0px 0px 0px;
+    }
+    .secundaria{
+        width: 350px;
+        height: 186px;
+        margin-left: 0px;
+        margin-top: 48px;
+        padding: 12px;
+        background: none;
+        border:0px;
+        
+    }
+    .mensaje{
+        background-image: url("/imagenes/Colibri.jpg");
+        background: white;
+        background-size: cover;
+        width: 263px; /* Ajustar el ancho al 100% */
+        height: 122px;
+        margin: 0px 0px 0px 10px; /* Ajustar el margen a cero */
+        padding: 32px; /* Ajustar el padding a cero */
+        border: 0px 0px 0px 0px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    }
+    .copiar {
+        width: 624px;
+        margin-left: 32px;
+    }
+}
