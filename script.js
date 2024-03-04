@@ -43,13 +43,17 @@ function btnEncriptar(){
     const textoEncriptado = encriptar(textArea.value);
     mensaje.value = textoEncriptado;
     textArea.value="";
-    mensaje.style.backgroundImage = none;
+    mensaje.style.backgroundImage = "none";
+    const btnCopiar1 = document.querySelector('.copiar');
+    btnCopiar1.style.display = 'block';
 }
 function btnDesencriptar(){
     const textoEncriptado = desencriptar(textArea.value);
     mensaje.value = textoEncriptado;
     textArea.value="";
     mensaje.style.backgroundImage = "none";
+    const btnCopiar2 = document.querySelector('.copiar');
+    btnCopiar2.style.display = 'block';
 }
 
 function encriptar(cadenaEncriptada){
