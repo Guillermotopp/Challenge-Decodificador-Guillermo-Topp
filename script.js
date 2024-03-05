@@ -46,6 +46,11 @@ function btnEncriptar(){
     mensaje.style.backgroundImage = "none";
     const btnCopiar1 = document.querySelector('.copiar');
     btnCopiar1.style.display = 'block';
+    // Ocultar el mensaje de inicio
+    const mensajeInicio = document.querySelector('.mensajeInicio');
+    mensajeInicio.style.display = 'none';
+    // hacer aparecer el mensaje desenriptado luego de borrar el mensaje de inicio
+   
 }
 function btnDesencriptar(){
     const textoEncriptado = desencriptar(textArea.value);
@@ -54,6 +59,9 @@ function btnDesencriptar(){
     mensaje.style.backgroundImage = "none";
     const btnCopiar2 = document.querySelector('.copiar');
     btnCopiar2.style.display = 'block';
+    // Ocultar el mensaje de inicio
+    const mensajeInicio = document.querySelector('.mensajeInicio');
+    mensajeInicio.style.display = 'none';
 }
 
 function encriptar(cadenaEncriptada){
@@ -78,3 +86,56 @@ function desencriptar(cadenaDesencriptada){
     }
     return cadenaDesencriptada;
 }
+/*
+function copiar() {
+    // Seleccionar el texto del área de texto
+    const textArea = document.querySelector("textarea.campo-texto");
+    
+    // Copiar el texto seleccionado al portapapeles
+    navigator.clipboard.writeText(textArea.value)
+        .then(() => {
+            console.log('Texto copiado al portapapeles: ' + textArea.value);
+            // Aquí puedes agregar cualquier lógica adicional después de copiar el texto
+        })
+        .catch(err => {
+            console.error('Error al copiar al portapapeles: ', err);
+            // Manejar cualquier error que ocurra durante la copia al portapapeles
+        });
+}
+*/
+
+/*function copiar() {
+    const textArea = document.querySelector("textarea.campo-texto");
+    
+    // Copiar el texto seleccionado al portapapeles
+    navigator.clipboard.writeText(textArea.value)
+        .then(() => {
+            console.log('Texto copiado al portapapeles: ' + textArea.value);
+            // Aquí puedes agregar cualquier lógica adicional después de copiar el texto
+        })
+        .catch(err => {
+            console.error('Error al copiar al portapapeles: ', err);
+            // Manejar cualquier error que ocurra durante la copia al portapapeles
+        });
+}
+*/
+/*function copiar() {
+    var texto = document.getElementById("texto-encriptado").value;
+    navigator.clipboard.writeText(texto);
+    alert("Texto copiado al portapapeles!");
+  }*/
+
+function copiar() {
+    // Get the text field
+    var copyText = mensaje;
+  
+    // Select the text field
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); // For mobile devices
+  
+     // Copy the text inside the text field
+    navigator.clipboard.writeText(copyText.value);
+  
+    // Alert the copied text
+    alert("Copied the text: " + copyText.value);
+  }

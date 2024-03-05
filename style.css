@@ -14,7 +14,8 @@
     width: 10%; */
     width: auto;
     height: 48px;
-    margin: 40px 40px 0px 40px;    
+    margin: 40px 40px 0px 40px;
+    padding: 0px 40px 0px 40px;    
 }
 main{
     display: flex;
@@ -24,41 +25,103 @@ main{
 }
 .principal{
     width: 680px;
+    height: 936px;
 }
 .campo-texto{
-    margin-top: 128px;
-    width: 616px;
+    margin-top: 80px;
+    width: 577px;
     height: 48px;
     border-radius: 32px;
-    padding: 32px;
+    padding: 0px;
     font-size:32px;
     line-height: 50%;
+    font-size: 32px;
+    font-weight: regular;
+    line-height: 150%;
+    text-align: left;
+    padding-left: 16px;
+    background: none;
 }
+/*
 .text-area {
-    /*border: none;
+    border: none;
     color:blue;
     margin-top: 90px;
     text-transform: lowercase;
-    */
     width: 577px;
     height: 48px;
     top: 168px;
     left: 240px;
-
 }
+
 ::placeholder {color: blueviolet}
 .text-area focus{
     outline:none;
 }
+*/
+.informacion{
+    width: 229;
+    height: 18px;
+    margin: 635px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    gap: 8px;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.informacion:hover{
+    background-color: aqua;
+}
+.btn{
+    display: flex;
+    width: 680px;
+    height: 67px;
+    margin: 16px 0px 0px 0px;
+}
+.btnEncriptar{
+    text-align: center;
+    font-size: 16px;
+    width: 328px;
+    height: Hug (67px);
+    padding: 0px;
+    margin:0px;
+    margin-right: 12px;
+    border-radius: 24px;
+    gap: 8px;
+    background: #0A3871;
+    color: #ffffff;
+    border: 1px solid #0A3871;
+}
+.btnDesencriptar{
+    text-align: center;
+    font-size: 16px;
+    width: 328px;
+    height: Hug (67px);
+    padding: 0px;
+    margin: 0px;
+    margin-left: 12px;
+    border-radius: 24px;
+    gap: 8px;
+    border: 1px solid #0A3871;
+    background: #D8DFE8;
+    color:#0A3871;
+    margin-right: 0px;
+    /*State="Normal";*/
+}
+.btnEncriptar:hover,}
 .secundaria{
-    height: 944px;
-    margin: 32px;
+    height: 896px;
+    width: 400PX;
+    margin: 0px 40px 40px 64px;
     background: white;
     border-radius: 32px;
 }
 .mensaje{
     background: white;
-    background-image: url("imagenes/Colibri.jpg");
+    background-image: url("/imagenes/Colibri.jpg");
     background-repeat: no-repeat;
     text-align: left;
     font-size: 22px;
@@ -74,8 +137,8 @@ main{
     width: 336px;
     height: 304px;
     border-radius: 32px;
-    margin: 300px 0px 0px 10px;
-    padding: 32px;
+    margin: 195px 32px 0px 32px;
+    padding: 0px;
     border: none;
 
 }
@@ -83,74 +146,43 @@ main{
     outline:none; 
     /* cuando nos paramos sobre las cajas que no se resalte*/
 }
-.btn{
-    display: flex;
-    width: Fixed (680px);
-    height: Hug (67px);
-    top: 885px;
-    left: 240px;
-    gap: 24px;
-
-}
-.btnEncriptar{
-    width: 328px;
-    height: Hug (67px);
-    padding: 24px;
-    border-radius: 24px;
-    gap: 8px;
-    background: #0A3871;
-    color: #ffffff;
-    border: 1px solid #0A3871;
-    
-}
-.btnDesencriptar{
-    width: 328px;
-    height: Hug (67px);
-    padding: 24px;
-    border-radius: 24px;
-    gap: 8px;
-    border: 1px solid #0A3871;
-    background: #D8DFE8;
-    color:#0A3871;
-    margin-right: 0px;
-    /*State="Normal";*/
-}
-
-.informacion{
-    width: Hug (229px);
-    height: Hug (18px);
-    top: 851px;
-    left: 240px;
-    gap: 8px;
-    font-family: Inter;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 18px;
-    letter-spacing: 0em;
-    text-align: left;
-    margin-top: 600px;
+.mensajeInicio{
+    height: 122px;
+    width: 336px;
+    margin: 32px;
+    background: none;
 }
 .mensajeInicio h3 {
+    background: none;
     font-size: 24px;
+    font-weight: bold;
     text-align: center;
+    line-height: 120%;
+    letter-spacing: 0px;
+    height: 58px;
 }
 .mensajeInicio h6 {
+    background: none;
+    margin-top: 16px;
     font-size: 16px;
     text-align: center;
+    height: 48px;
+    line-height: 150%;
+    letter-spacing: 0px;
 }
 .copiar{
-    width: 100%;
-    height: Hug (67px);
-    top: 885px;
-    left: 1032px;
-    padding: 24px;
+    width: 336px;
+    height: 67px;
+    padding: 0px;
     border-radius: 24px;
     border: 1px solid #0A3871;
-    gap: 8px;
     color: #0A3871;
-    margin-top: 200 px;
+    margin-top: 144px;
+    margin-left: 32px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: regular;
     display: none;
-
 }
 
 /* Estilos específicos para tablet */
@@ -209,7 +241,7 @@ main{
     }
     
     .mensaje{
-        background-image: url("imagenes/Muñeco.png");
+        background-image: url("/imagenes/Muñeco.png");
         background-size: cover;
         width: 94%; /* Ajustar el ancho al 100% */
         height: 133px;
@@ -276,7 +308,7 @@ main{
         box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.5); /* Agregar sombra */
     }
     .mensaje{
-        background-image: url("imagenes/Colibri.jpg");
+        background-image: url("/imagenes/Colibri.jpg");
         background: none;
         background-size: cover;
         width: 624px; /* Ajustar el ancho al 100% */
@@ -336,16 +368,18 @@ main{
     .btnEncriptar{
         width: 343px;
         height: 67px;
-        margin-bottom: 24px;  
+        margin: 0px 0px 24px 0px;  
         text-align: center;
         font-size: 18px;
+        padding: 0px;
     }
     .btnDesencriptar{
       width: 343px;
       height: 67px; 
       text-align: center;
       font-size: 18px;
-      margin-bottom: 24px;  
+      margin: 0px 0px 24px 0px;
+      padding: 0px;  
     }
     .informacion-caja{
         
@@ -356,39 +390,52 @@ main{
         
         padding: 32px;
         margin:0px;
-        margin-top: 112px;
+        margin-top: 104px;
     }
     .secundaria{
-        width: 350px;
-        height: 343px;
-        margin-left: 12px;
-        margin-top: 0px;
-        padding: 24px;
+        width: 327px;
+        height: 186px;
+        margin-left: 24px;
+        margin-top: 56px;
+        padding: 32px;
         background: white;
         border:0px;
         border: 0px 0px 0px 0px;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-        
     }
     .mensaje{
-        background-image: url("imagenes/Colibri.jpg");
+        background-image: url("/imagenes/Colibri.jpg");
         background: none;
         background-size: cover;
         width: 100%; /* Ajustar el ancho al 100% */
         height: 122px;
         margin: 0px 0px 0px 0px; /* Ajustar el margen a cero */
-        padding: 0pxpx; /* Ajustar el padding a cero */
-       
+        padding: 0px; /* Ajustar el padding a cero */
     }
     .mensajeInicio{
         font-size: 24px;
         background: none;
+        width: 263px;
+        height: 122px;
+        margin: 0px;
+        padding: 0px;
+    }
+    .mensajeInicio h3{
+        font-size: 24;
+        line-height: 120%;
+        text-align: center;
+    }
+    .mensajeInicio h6{
+        font-size: 16;
+        line-height: 150%;
+        text-align: center;
+        letter-spacing: 0px;
     }
     .copiar {
         font-size:18px;
-        width: 100%;
+        width: 263px;
         height: 67px;
-        margin-left: 0px;
+        margin: 0px 0px 0px 0px;
         text-align: center;
         text-justify: auto;
         display: none;
@@ -398,8 +445,8 @@ main{
         display: none;
     }*/
 }
-@media  (max-height: 1755px) and (min-height:1700px) {
-    body{
+@media  (max-height: 1755px) and (min-height:1700px){
+body{
         margin: 0px;
         padding: 0px;
         width: 375px;
@@ -473,10 +520,10 @@ main{
         
     }
     .mensaje{
-        background-image: url("imagenes/Colibri.jpg");
+        background-image: url("/imagenes/Colibri.jpg");
         background: white;
         background-size: cover;
-        width: 279px; /* Ajustar el ancho al 100% */
+        width: 279px; /* z el ancho al 100% */
         height: 432px;
         margin: 0px 0px 0px 32px; /* Ajustar el margen a cero */
         padding: 32px; /* Ajustar el padding a cero */
