@@ -43,14 +43,61 @@ function btnEncriptar(){
     const textoEncriptado = encriptar(textArea.value);
     mensaje.value = textoEncriptado;
     textArea.value="";
-    mensaje.style.backgroundImage = "none";
-    const btnCopiar1 = document.querySelector('.copiar');
-    btnCopiar1.style.display = 'block';
-    // Ocultar el mensaje de inicio
-    const mensajeInicio = document.querySelector('.mensajeInicio');
-    mensajeInicio.style.display = 'none';
-    // hacer aparecer el mensaje desenriptado luego de borrar el mensaje de inicio
-   
+    const copiar = document.querySelector('.copiar');
+            
+    
+    const mainElement = document.querySelector('main');
+    const mainWidth = mainElement.offsetWidth;
+    const mainHeight = mainElement.offsetHeight;
+    console.log(`El ancho del selector main es: ${mainWidth}px`);
+    console.log(`El alto del selector main es: ${mainHeight}px`);
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+    console.log("width",width);
+    console.log("height",height);
+        if ((mainWidth == 1440) && (mainHeight ==1024)){
+            mensaje.style.backgroundImage = "none";
+            const mensajeInicio = document.querySelector('.mensajeInicio');
+            mensajeInicio.style.display = 'none';
+            copiar.style.display = 'block';
+        }
+        if ((width == 375) && (height ==933)){
+            mensaje.style.backgroundImage = "none";
+          //  mensaje.style.display='block';
+            const mensajeInicio = document.querySelector('.mensajeInicio');
+            mensajeInicio.style.display = 'none';
+            copiar.style.display = 'block';
+            // Eliminar la propiedad display: none
+            mensaje.style.removeProperty('display');
+
+            // Mostrar el elemento
+            mensaje.style.display = 'block';
+           // Cambiar la imagen de fondo
+            mensaje.style.backgroundImage = 'url("/imagenes/Colibri.jpg")';
+
+        }
+        if (width == 1440 && height == 1024) {
+            // const btnCopiar1 = document.querySelector('.copiar');
+            //btnCopiar1.style.display = 'block';
+            // Ocultar el mensaje de inicio
+            mensaje.style.backgroundImage = "none";
+            const mensajeInicio = document.querySelector('.mensajeInicio');
+            mensajeInicio.style.display = 'none';
+        // hacer aparecer el mensaje desenriptado luego de borrar el mensaje de inicio
+        }
+        if ((width > 763) &&  (width < 772) && (height>1171) && (height<1179)) {
+            // const btnCopiar1 = document.querySelector('.copiar');
+            //btnCopiar1.style.display = 'block';
+            // Ocultar el mensaje de inicio
+            mensaje.style.backgroundImage = "none";
+            const mensajeInicio = document.querySelector('.mensajeInicio');
+            mensajeInicio.style.display = 'none';
+              // Mostrar el elemento
+            mensaje.style.display = 'block';
+            copiar.style.display = 'block';
+        // hacer aparecer el mensaje desenriptado luego de borrar el mensaje de inicio
+        }
+
 }
 function btnDesencriptar(){
     const textoEncriptado = desencriptar(textArea.value);
@@ -86,6 +133,8 @@ function desencriptar(cadenaDesencriptada){
     }
     return cadenaDesencriptada;
 }
+// si la pantalla es > 763 y la pantalla < 771px y la pantalla es > 1171 px y la pantalla es < 1179
+
 /*
 function copiar() {
     // Seleccionar el texto del área de texto
@@ -124,7 +173,20 @@ function copiar() {
     navigator.clipboard.writeText(texto);
     alert("Texto copiado al portapapeles!");
   }*/
-
+/*function mostrarTamaño() {
+    // Obtener el ancho y alto del display
+    const anchoDisplay = window.innerWidth;
+    const altoDisplay = window.innerHeight;
+  
+    // Obtener el ancho y alto del elemento main
+    const main = document.querySelector('main');
+    const anchoMain = main.offsetWidth;
+    const altoMain = main.offsetHeight;
+  
+    // Mostrar información en la consola
+    console.log(`Tamaño del display: ${anchoDisplay}px x ${altoDisplay}px`);
+    console.log(`Tamaño del main: ${anchoMain}px x ${altoMain}px`);
+  };*/
 function copiar() {
     // Get the text field
     var copyText = mensaje;

@@ -19,6 +19,8 @@
 }
 main{
     display: flex;
+    width: 1440px;
+    height: 1024px;
     margin-bottom: 50px;
     margin-left: 160px;
     padding: 0px 80px 80px 80px;
@@ -72,9 +74,7 @@ main{
     letter-spacing: 0em;
     text-align: left;
 }
-.informacion:hover{
-    background-color: aqua;
-}
+
 .btn{
     display: flex;
     width: 680px;
@@ -95,6 +95,7 @@ main{
     color: #ffffff;
     border: 1px solid #0A3871;
 }
+
 .btnDesencriptar{
     text-align: center;
     font-size: 16px;
@@ -111,7 +112,14 @@ main{
     margin-right: 0px;
     /*State="Normal";*/
 }
-.btnEncriptar:hover,}
+.btnEncriptar:hover{
+    background-color:#607a99;
+}
+.btnDesencriptar:hover{
+    background: #737374;
+}
+
+
 .secundaria{
     height: 896px;
     width: 400PX;
@@ -121,7 +129,7 @@ main{
 }
 .mensaje{
     background: white;
-    background-image: url("imagenes/Colibri.jpg");
+    background-image: url("/imagenes/Colibri.jpg");
     background-repeat: no-repeat;
     text-align: left;
     font-size: 22px;
@@ -177,7 +185,7 @@ main{
     border-radius: 24px;
     border: 1px solid #0A3871;
     color: #0A3871;
-    margin-top: 144px;
+    margin-top: 300px;
     margin-left: 32px;
     text-align: center;
     font-size: 16px;
@@ -185,12 +193,118 @@ main{
     display: none;
 }
 
-/* Estilos específicos para tablet */
-@media (min-width: 767px) and (max-width: 771px) and (max-height: 1175px) and (min-height: 1173px) {
+
+/*estilo  especifico para el celular 2 de Alura*/
+@media  (min-height: 370px) and (max-height: 380px) and (min-height:1710px) and (max-height:1720px){
+    body{
+            margin: 0px;
+            padding: 0px;
+            width: 375px;
+            height: 1644px;
+        }
+        .logo {
+            height: 48px;
+            width: auto; /* Reducir el tamaño del logo para tablet */
+            
+            margin: 23px 40px 24px 40px;
+        }
+        main {
+            display: block;
+            margin: 0px; /* Ajustar el margen izquierdo para tablet */
+            padding: 0px;
+            width: 375px;
+            height: 1750px;
+           
+        }
+        .principal {
+            width: 100%; /* Ajustar el ancho para tablet */
+            height: 467px;
+            margin: 56px 0px 0px 0px; /* Ajustar el margen izquierdo para tablet */
+            padding: 0px;
+        }
+        .campo-texto {
+            width: 343px; /* Ajustar el ancho para tablet */
+            height: 624px;
+            padding: 0px; /* Ajustar el margen superior para tablet */  
+            margin: 0px 0px 0px 16px;
+            background: none;
+        }
+        .btn {
+            display: block;
+            width: 100%; /* Ajustar el ancho para tablet */
+            height: 168px;
+            margin: 0px; /* Ajustar el margen izquierdo para tablet */
+            padding: 12px;
+        }
+        .btnEncriptar{
+            width: 343px;
+            height: 67px;
+            margin-bottom: 24px;  
+            text-align: center;
+            font-size: 18px;
+        }
+        .btnDesencriptar{
+          width: 343px;
+          height: 67px; 
+          text-align: center;
+          font-size: 18px;
+          margin-bottom: 24px;  
+        }
+        .btnEncriptar:hover{
+            background-color:#607a99;
+        }
+        .btnDesencriptar:hover{
+            background: #737374;
+        }
+        .informacion-caja{
+            
+            width: auto;
+            margin: 200 px 0px 0px 0px;
+        }
+        .informacion{
+            margin-top: 48px;
+            padding: 0px;
+        }
+        .secundaria{
+            width: 343px;
+            height: 595px;
+            margin-left: 0px;
+            margin-top: 498px;
+            padding: 12px;
+            background: none;
+            border:0px;
+            
+        }
+        .mensaje{
+            background-image: url("/imagenes/Colibri.jpg");
+            background: white;
+            background-size: cover;
+            width: 279px; /* z el ancho al 100% */
+            height: 432px;
+            margin: 0px 0px 0px 32px; /* Ajustar el margen a cero */
+            padding: 32px; /* Ajustar el padding a cero */
+            border: 0px 0px 0px 0px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+        .copiar {
+            width: 279px;
+            margin-left: 32px;
+            border-radius: 24px;
+        }
+        .mensajeInicio{
+            display: none;
+        }
+    }
+
+
+/* Estilos específicos para tablet 1 de Alura 768 x 1174*/
+@media (min-width: 763px) and (max-width: 771px) and (max-height: 1179px) and (min-height: 1171px) {
     .logo { 
-        width: 31px; /* Reducir el tamaño del logo para tablet */
-        height: auto;
+        width: auto; /* Reducir el tamaño del logo para tablet */
+        height: 32px;
         margin: 73px 40px 40px 40px;
+        display: inline-block;
+        opacity: 1;
     }
     main {
         display: block;
@@ -201,21 +315,20 @@ main{
        
     }
     .principal {
-        width: 90%; /* Ajustar el ancho para tablet */
+        width: 768px; /* Ajustar el ancho para tablet */
         height: 750px;
         margin: 0px; /* Ajustar el margen izquierdo para tablet */
         padding: 40px;
     }
     .campo-texto {
-        width: 90%; /* Ajustar el ancho para tablet */
+        width: 688px; /* Ajustar el ancho para tablet */
         height: 450px;
         padding: 40px; /* Ajustar el margen superior para tablet */  
         margin: auto;
     }
     .btn {
-        width: 100%; /* Ajustar el ancho para tablet */
-        margin: 0px; /* Ajustar el margen izquierdo para tablet */
-        order: 1;
+        width: 688; /* Ajustar el ancho para tablet */
+        margin: auto; /* Ajustar el margen izquierdo para tablet */
     }
     .btnEncriptar{
         width: 53%;  
@@ -223,17 +336,25 @@ main{
     .btnDesencriptar{
       width: 53%;
     }
+    .btnEncriptar:hover{
+        background-color:#607a99;
+    }
+    .btnDesencriptar:hover{
+        background: #737374;
+    }
     .informacion-caja{
         width: auto;
         margin-top: 0px;
     }
     .informacion{
-        margin-top: 200px;
+        margin-top: 100px;
     }
     .secundaria{
-        width: 100%;
+        width: 688px;
         height: 133px;
         margin: 0px;
+        margin-left: 40px;
+        margin-top: 32px;
         padding: 0px;
         border:0px;
         order:2;
@@ -241,20 +362,42 @@ main{
     }
     
     .mensaje{
-        background-image: url("imagenes/Colibri.jpg");
+        background-image: url("/imagenes/Colibri.jpg");
         background-size: cover;
-        width: 94%; /* Ajustar el ancho al 100% */
-        height: 133px;
+        width: 624px; 
+        height: 69px;
         margin: 0px; /* Ajustar el margen a cero */
-        margin-left: 20px;
-        padding: 3%; /* Ajustar el padding a cero */
+        padding: 0px; /* Ajustar el padding a cero */
         border:0px;
-        background: none;
+        display: none;
+    }
+    .mensajeInicio{
+        width: 624px;
+        height: 69px;
+        padding: 0px;
+        margin: 32px 0px 0px 32px;
+    }
+    .mensajeInicio h3{
+        height: 24px;
+        width: auto;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .mensajeInicio h3{
+        height: 24px;
+        width: auto;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        margin: 0px;
     }
     .copiar {
         display: none; /* Ocultar el botón de copiar */
+        margin: 0px 0px 0px 168px;
     }
 }
+/*estilo espicifico para la tablet 2 de Alura*/
 @media (width: 768px) and (height: 1384px) {
     .logo {
         height: 49px;
@@ -291,40 +434,50 @@ main{
     .btnDesencriptar{
       width: 53%;
     }
+    .btnEncriptar:hover{
+        background-color:#607a99;
+    }
+    .btnDesencriptar:hover{
+        background: #737374;
+    }
     .informacion-caja{
         width: auto;
         
     }
     .informacion{
-        margin-top: 80px;
+        margin-top: 250px;
     }
     .secundaria{
         width: 688px;
         height: 343px;
         margin-left: 40px;
-        padding: 0px;
+        padding: 32px;
         background: white;
         border:0px;
         box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.5); /* Agregar sombra */
     }
     .mensaje{
-        background-image: url("imagenes/Colibri.jpg");
+        background-image: url("/imagenes/Colibri.jpg");
         background: none;
         background-size: cover;
         width: 624px; /* Ajustar el ancho al 100% */
-        height: 200px;
+        height: 180px;
         margin: 0px; /* Ajustar el margen a cero */
-        padding: 32px; /* Ajustar el padding a cero */
+        padding: 0px; /* Ajustar el padding a cero */
         border:0px;
     }
     .copiar {
         width: 624px;
-        margin-left: 32px;
+        height: 67px;
+        margin:0px;
+        padding: 0px;
+        display: block;
     }
     .mensajeInicio{
         display: none;
     }
 }
+/*estilo especifico para celular 1 de Alura*/
 @media (min-width: 370px) and (max-width: 377px) and (min-height:930px) and (max-height: 934px) {
     body{
         margin: 0px;
@@ -335,6 +488,9 @@ main{
         
         margin: 24px 40px 24px 40px;
     }
+/*    .mostrarTamaño{
+        display: none;
+    }*/
     main {
         display: block;
         margin: 0px; /* Ajustar el margen izquierdo para tablet */
@@ -381,6 +537,12 @@ main{
       margin: 0px 0px 24px 0px;
       padding: 0px;  
     }
+    .btnEncriptar:hover{
+        background-color:#607a99;
+    }
+    .btnDesencriptar:hover{
+        background: #737374;
+    }
     .informacion-caja{
         
         width: auto;
@@ -404,13 +566,16 @@ main{
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     }
     .mensaje{
-        background-image: url("imagenes/Colibri.jpg");
+        background-image: url("/imagenes/Colibri.jpg");
+        background-image: opacity(0.1);
         background: none;
-        background-size: cover;
+        background-repeat: repeat;
+        background-size: contain;
         width: 100%; /* Ajustar el ancho al 100% */
-        height: 122px;
+        height: 66px;
         margin: 0px 0px 0px 0px; /* Ajustar el margen a cero */
         padding: 0px; /* Ajustar el padding a cero */
+        display: none;
     }
     .mensajeInicio{
         font-size: 24px;
@@ -444,98 +609,4 @@ main{
     /*.mensajeInicio{
         display: none;
     }*/
-}
-@media  (max-height: 1755px) and (min-height:1700px){
-body{
-        margin: 0px;
-        padding: 0px;
-        width: 375px;
-        height: 1750px;
-    }
-    .logo {
-        height: 48px;
-        width: auto; /* Reducir el tamaño del logo para tablet */
-        
-        margin: 24px 40px 24px 40px;
-    }
-    main {
-        display: block;
-        margin: 0px; /* Ajustar el margen izquierdo para tablet */
-        padding: 0px;
-        width: 375px;
-        height: 1750px;
-       
-    }
-    .principal {
-        width: 100%; /* Ajustar el ancho para tablet */
-        height: 467px;
-        margin: 56px 0px 0px 0px; /* Ajustar el margen izquierdo para tablet */
-        padding: 0px;
-    }
-    .campo-texto {
-        width: 343px; /* Ajustar el ancho para tablet */
-        height: 624px;
-        padding: 0px; /* Ajustar el margen superior para tablet */  
-        margin: 0px 0px 0px 16px;
-        background: none;
-    }
-    .btn {
-        display: block;
-        width: 100%; /* Ajustar el ancho para tablet */
-        height: 168px;
-        margin: 0px; /* Ajustar el margen izquierdo para tablet */
-        padding: 12px;
-    }
-    .btnEncriptar{
-        width: 343px;
-        height: 67px;
-        margin-bottom: 24px;  
-        text-align: center;
-        font-size: 18px;
-    }
-    .btnDesencriptar{
-      width: 343px;
-      height: 67px; 
-      text-align: center;
-      font-size: 18px;
-      margin-bottom: 24px;  
-    }
-    .informacion-caja{
-        
-        width: auto;
-        margin: 200 px 0px 0px 0px;
-    }
-    .informacion{
-        margin-top: 48px;
-        padding: 0px;
-    }
-    .secundaria{
-        width: 343px;
-        height: 595px;
-        margin-left: 0px;
-        margin-top: 498px;
-        padding: 12px;
-        background: none;
-        border:0px;
-        
-    }
-    .mensaje{
-        background-image: url("imagenes/Colibri.jpg");
-        background: white;
-        background-size: cover;
-        width: 279px; /* z el ancho al 100% */
-        height: 432px;
-        margin: 0px 0px 0px 32px; /* Ajustar el margen a cero */
-        padding: 32px; /* Ajustar el padding a cero */
-        border: 0px 0px 0px 0px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    }
-    .copiar {
-        width: 279px;
-        margin-left: 32px;
-        border-radius: 24px;
-    }
-    .mensajeInicio{
-        display: none;
-    }
 }
