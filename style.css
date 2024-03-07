@@ -129,7 +129,7 @@ main{
 }
 .mensaje{
     background: white;
-    background-image: url("/imagenes/Colibri.jpg");
+    background-image: url("imagenes/Colibri.jpg");
     background-repeat: no-repeat;
     text-align: left;
     font-size: 22px;
@@ -276,7 +276,7 @@ main{
             
         }
         .mensaje{
-            background-image: url("/imagenes/Colibri.jpg");
+            background-image: url("imagenes/Colibri.jpg");
             background: white;
             background-size: cover;
             width: 279px; /* z el ancho al 100% */
@@ -362,7 +362,7 @@ main{
     }
     
     .mensaje{
-        background-image: url("/imagenes/Colibri.jpg");
+        background-image: url("imagenes/Colibri.jpg");
         background-size: cover;
         width: 624px; 
         height: 69px;
@@ -457,7 +457,7 @@ main{
         box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.5); /* Agregar sombra */
     }
     .mensaje{
-        background-image: url("/imagenes/Colibri.jpg");
+        background-image: url("imagenes/Colibri.jpg");
         background: none;
         background-size: cover;
         width: 624px; /* Ajustar el ancho al 100% */
@@ -566,7 +566,7 @@ main{
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     }
     .mensaje{
-        background-image: url("/imagenes/Colibri.jpg");
+        background-image: url("imagenes/Colibri.jpg");
         background-image: opacity(0.1);
         background: none;
         background-repeat: repeat;
