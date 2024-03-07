@@ -12,4 +12,8 @@
     ["o", "ober"], // indice 3<br>
     ["u", "ufat"], // indice 4<br>
 </p>
-
+<p>Version 3.0 <br>
+Se corrigieron errores en js<br>
+se agrgo el botón copiar<br>
+todas las pantallas funcionan correctamente<br>
+</p>
